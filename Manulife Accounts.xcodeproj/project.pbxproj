@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7CFD5F16093F521C653317 /* Pods_Maulife_Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFAC779F3AC1BF01BCB9A9C /* Pods_Maulife_Accounts.framework */; };
 		5F4F6AC22022AFB40030491E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4F6AC12022AFB40030491E /* AppDelegate.swift */; };
 		5F4F6AC42022AFB40030491E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4F6AC32022AFB40030491E /* ViewController.swift */; };
 		5F4F6AC72022AFB40030491E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4F6AC52022AFB40030491E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DFAC779F3AC1BF01BCB9A9C /* Pods_Maulife_Accounts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maulife_Accounts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4F6ABE2022AFB40030491E /* Maulife Accounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maulife Accounts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4F6AC12022AFB40030491E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F4F6AC32022AFB40030491E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5F4F6ACB2022AFB40030491E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F4F6ACE2022AFB40030491E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F4F6AD02022AFB40030491E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC31E8EE593AC5E3FFC0AF3 /* Pods-Maulife Accounts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maulife Accounts.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maulife Accounts/Pods-Maulife Accounts.release.xcconfig"; sourceTree = "<group>"; };
+		BC2358B1B08C5E1491182ECB /* Pods-Maulife Accounts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maulife Accounts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maulife Accounts/Pods-Maulife Accounts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,99 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7CFD5F16093F521C653317 /* Pods_Maulife_Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F199DBB20238F9E00EEF238 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F4F6AC12022AFB40030491E /* AppDelegate.swift */,
+				5F4F6AC32022AFB40030491E /* ViewController.swift */,
+				5F4F6AC52022AFB40030491E /* Main.storyboard */,
+				5F4F6ACB2022AFB40030491E /* Assets.xcassets */,
+				5F4F6ACD2022AFB40030491E /* LaunchScreen.storyboard */,
+				5F4F6AD02022AFB40030491E /* Info.plist */,
+				5F4F6AC82022AFB40030491E /* Maulife_Accounts.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F199DBD20238FC000EEF238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F199DBE20238FC700EEF238 /* Protocols */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F199DBE20238FC700EEF238 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5F199DBF20238FD300EEF238 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		5F199DC120238FE000EEF238 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		5F199DC320238FFB00EEF238 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5F199DC42023900500EEF238 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F199DC62023900F00EEF238 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5F199DC62023900F00EEF238 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5F199DC72023901A00EEF238 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F199DC82023902300EEF238 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5F4F6AB52022AFB30030491E = {
 			isa = PBXGroup;
 			children = (
 				5F4F6AC02022AFB40030491E /* Maulife Accounts */,
 				5F4F6ABF2022AFB40030491E /* Products */,
+				FCAC5D5B306E92F00DB86641 /* Pods */,
+				A6C559116E9BEC66BB98DC89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +142,33 @@
 		5F4F6AC02022AFB40030491E /* Maulife Accounts */ = {
 			isa = PBXGroup;
 			children = (
-				5F4F6AC12022AFB40030491E /* AppDelegate.swift */,
-				5F4F6AC32022AFB40030491E /* ViewController.swift */,
-				5F4F6AC52022AFB40030491E /* Main.storyboard */,
-				5F4F6ACB2022AFB40030491E /* Assets.xcassets */,
-				5F4F6ACD2022AFB40030491E /* LaunchScreen.storyboard */,
-				5F4F6AD02022AFB40030491E /* Info.plist */,
-				5F4F6AC82022AFB40030491E /* Maulife_Accounts.xcdatamodeld */,
+				5F199DC82023902300EEF238 /* Controllers */,
+				5F199DC72023901A00EEF238 /* Views */,
+				5F199DC42023900500EEF238 /* Services */,
+				5F199DC320238FFB00EEF238 /* Extensions */,
+				5F199DC120238FE000EEF238 /* Style */,
+				5F199DBF20238FD300EEF238 /* Localization */,
+				5F199DBD20238FC000EEF238 /* Model */,
+				5F199DBB20238F9E00EEF238 /* Supporting Files */,
 			);
 			path = "Maulife Accounts";
+			sourceTree = "<group>";
+		};
+		A6C559116E9BEC66BB98DC89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DFAC779F3AC1BF01BCB9A9C /* Pods_Maulife_Accounts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCAC5D5B306E92F00DB86641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC2358B1B08C5E1491182ECB /* Pods-Maulife Accounts.debug.xcconfig */,
+				6FC31E8EE593AC5E3FFC0AF3 /* Pods-Maulife Accounts.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F4F6AD32022AFB40030491E /* Build configuration list for PBXNativeTarget "Maulife Accounts" */;
 			buildPhases = (
+				F8E87B46880093EFA7C7BDCA /* [CP] Check Pods Manifest.lock */,
 				5F4F6ABA2022AFB40030491E /* Sources */,
 				5F4F6ABB2022AFB40030491E /* Frameworks */,
 				5F4F6ABC2022AFB40030491E /* Resources */,
+				D7E6FB19D6DE3CDA81BD2F6D /* [CP] Embed Pods Frameworks */,
+				3D2042FD8878853B2BE7FCC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D2042FD8878853B2BE7FCC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maulife Accounts/Pods-Maulife Accounts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E6FB19D6DE3CDA81BD2F6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maulife Accounts/Pods-Maulife Accounts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E87B46880093EFA7C7BDCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F4F6ABA2022AFB40030491E /* Sources */ = {
@@ -276,9 +431,11 @@
 		};
 		5F4F6AD42022AFB40030491E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2358B1B08C5E1491182ECB /* Pods-Maulife Accounts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Maulife Accounts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jeff.Maulife-Accounts";
@@ -290,9 +447,11 @@
 		};
 		5F4F6AD52022AFB40030491E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC31E8EE593AC5E3FFC0AF3 /* Pods-Maulife Accounts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Maulife Accounts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jeff.Maulife-Accounts";
